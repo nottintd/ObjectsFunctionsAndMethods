@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Tyler Nottingham.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 #   For objects that are CONSTRUCTED, we use the DOT notation
@@ -69,6 +69,7 @@ def main():
     calls the other functions in this module to test/demo them,
     and waits for the user to click anywhere in the window to close it.
     """
+
     window = rg.TurtleWindow()
 
     # Make the animation go much faster.
@@ -82,7 +83,9 @@ def main():
     turtle3()
 
     # When the TODOs ask you to test YOUR code, put YOUR tests here:
-
+    try_methods()
+    try_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()
 
@@ -172,11 +175,16 @@ def try_methods():
       -- backward  100 units
     """
     ####################################################################
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).
     ####################################################################
-
+    Tyler = rg.SimpleTurtle('turtle')
+    Tyler.pen = rg.Pen('brown', 5)
+    Tyler.forward(150)
+    Tyler.left(90)
+    Tyler.forward(50)
+    Tyler.backward(100)
 
 def try_functions():
     """
@@ -186,7 +194,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ####################################################################
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     #    Put a statement in   main   to test this function
     #    (by calling this function).  IMPORTANT, IMPORTANT, IMPORTANT:
     #    Keep reading the rest of this TO DO before doing the above!
@@ -197,7 +205,9 @@ def try_functions():
     # HINT: see   jump_and_move_turtle   above.
     #
     ####################################################################
-
+    jump_and_move_turtle(200, 100, 300, 30)
+    jump_and_move_turtle(100, 200, 0, 0)
+    jump_and_move_turtle(-50, 50, 100, 100)
 
 def try_methods_and_functions():
     """
@@ -242,8 +252,14 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
-
-
+    TD = rg.SimpleTurtle('turtle')
+    TD.pen = rg.Pen('blue', 5)
+    TD.backward(150)
+    TD.speed(1)
+    draw_many_squares(TD, 2, 100, 30)
+    TD.speed(5)
+    TD.pen = rg.Pen('red', 5)
+    draw_many_squares(TD, 10, 50, 15)
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
