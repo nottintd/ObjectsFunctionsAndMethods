@@ -252,14 +252,14 @@ def try_methods_and_functions():
     # function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ####################################################################
-    TD = rg.SimpleTurtle('turtle')
-    TD.pen = rg.Pen('blue', 5)
-    TD.backward(150)
-    TD.speed(1)
-    draw_many_squares(TD, 2, 100, 30)
-    TD.speed(5)
-    TD.pen = rg.Pen('red', 5)
-    draw_many_squares(TD, 10, 50, 15)
+    turtle7 = rg.SimpleTurtle('turtle')
+    turtle7.pen = rg.Pen('blue', 5)
+    turtle7.backward(150)
+    turtle7.speed(1)
+    draw_many_squares(turtle7, 2, 100, 30)
+    turtle7.speed(5)
+    turtle7.pen = rg.Pen('red', 5)
+    draw_many_squares(turtle7, 10, 50, 15)
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
